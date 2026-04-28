@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الفعاليات - دليل فعاليات الجامعة</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <div id="layout-header"></div>
+
+  <!-- Page Header -->
+  <div class="bg-primary-custom text-white py-4 text-center">
+    <h1 class="fw-bold">جميع الفعاليات</h1>
+    <p>ابحث واستكشف كافة الفعاليات القادمة في الجامعة</p>
+  </div>
+
+  <!-- Filter & Search Bar -->
+  <div class="container mt-5" data-aos="fade-up">
+    <div class="card p-4 shadow-sm border-0 mb-5">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="ابحث عن فعالية...">
+        </div>
+        <div class="col-md-3">
+          <select id="categoryFilter" class="form-select form-select-lg">
+            <option value="">جميع التصنيفات</option>
+            <option value="تقنية">تقنية</option>
+            <option value="ثقافة">ثقافة</option>
+            <option value="رياضة">رياضة</option>
+            <option value="موسيقى">موسيقى</option>
+            <option value="عائلي">عائلي</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <input type="date" id="dateFilter" class="form-control form-control-lg">
+        </div>
+        <div class="col-md-2">
+          <button id="btnSearch" class="btn btn-secondary w-100 btn-lg">بحث</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events Grid -->
+  <section class="py-2 mb-5">
+    <div class="container">
+      <div class="row" id="allEventsContainer">
+        <!-- Events injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <div id="layout-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

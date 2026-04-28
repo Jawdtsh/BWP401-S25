@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل الفعالية - دليل فعاليات الجامعة</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <div id="layout-header"></div>
+
+  <!-- Event Details Section -->
+  <section class="py-5" id="eventDetailsContainer">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item"><a href="events.html">الفعاليات</a></li>
+          <li class="breadcrumb-item active" aria-current="page">التفاصيل</li>
+        </ol>
+      </nav>
+
+      <div class="row g-5">
+        <div class="col-lg-8" data-aos="fade-left">
+          <img id="eventImage" src="" alt="Event" class="img-fluid rounded-4 shadow-sm mb-4 w-100" style="max-height: 400px; object-fit: cover;">
+          <span id="eventCategory" class="badge bg-primary fs-6 mb-3"></span>
+          <h1 id="eventTitle" class="fw-bold mb-3"></h1>
+          <div class="d-flex gap-4 text-muted mb-4">
+            <span><i class="bi bi-calendar-event text-primary-custom"></i> <span id="eventDate"></span></span>
+            <span><i class="bi bi-geo-alt text-primary-custom"></i> <span id="eventLocation"></span></span>
+          </div>
+          <h4 class="fw-bold">وصف الفعالية</h4>
+          <p id="eventDescription" class="fs-5 lh-lg mb-5"></p>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="card p-4 shadow-sm mb-4">
+            <h5 class="fw-bold mb-3">تفاصيل الحضور</h5>
+            <button class="btn btn-primary w-100 mb-2 py-2"><i class="bi bi-calendar-plus"></i> أضف للتقويم</button>
+            <button class="btn btn-outline-secondary w-100 py-2"><i class="bi bi-share"></i> شارك الفعالية</button>
+            
+          </div>
+          <div class="card shadow-sm p-2">
+            <!-- Google Maps Static Screenshot Image Mock -->
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&auto=format&fit=crop&q=60" alt="Map" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Events -->
+  <section class="py-5 bg-light-bg">
+    <div class="container">
+      <h3 class="fw-bold mb-4" data-aos="fade-up">فعاليات ذات صلة</h3>
+      <div class="row" id="relatedEventsContainer">
+        <!-- Related injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <div id="layout-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

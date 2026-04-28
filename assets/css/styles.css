@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #f59e0b;
+  --accent-color: #10b981;
+  --dark-bg: #1e293b;
+  --light-bg: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-primary);
+  direction: rtl;
+}
+
+body.dark-mode {
+  --light-bg: #0f172a;
+  --text-primary: #f8fafc;
+  --dark-bg: #f8fafc;
+  --border-color: #334155;
+  background-color: var(--light-bg);
+  color: var(--text-primary);
+}
+
+body.dark-mode .card {
+  background-color: #1e293b;
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+body.dark-mode .card-body, body.dark-mode .card-title, body.dark-mode .card-text {
+  color: var(--text-primary);
+}
+
+body.dark-mode .text-muted {
+  color: #94a3b8 !important;
+}
+
+body.dark-mode .form-control, body.dark-mode .form-select {
+  background-color: #0f172a;
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-control:focus, body.dark-mode .form-select:focus {
+  background-color: #0f172a;
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #64748b;
+}
+
+.bg-light-bg {
+  background-color: var(--light-bg) !important;
+}
+
+.text-primary-custom { color: var(--primary-color) !important; }
+.text-secondary-custom { color: var(--secondary-color) !important; }
+.text-accent-custom { color: var(--accent-color) !important; }
+.bg-primary-custom { background-color: var(--primary-color) !important; }
+.bg-secondary-custom { background-color: var(--secondary-color) !important; }
+.bg-accent-custom { background-color: var(--accent-color) !important; }
+
+/* Navbar */
+.navbar {
+  background-color: var(--dark-bg);
+  padding: 1rem 0;
+}
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+
+body.dark-mode .navbar {
+  background-color: #000;
+}
+
+/* Cards */
+.card {
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+body.dark-mode .hero-section {
+  background-color: #1d4ed8;
+}
+
+/* Scroll to Top */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+#scrollToTop:hover {
+  background-color: #d97706;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-bg);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+body.dark-mode footer {
+  background-color: #000;
+}

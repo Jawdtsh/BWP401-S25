@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - دليل فعاليات الجامعة</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <div id="layout-header"></div>
+
+  <!-- Contact Header -->
+  <section class="bg-primary-custom text-white py-4 text-center">
+    <div class="container" data-aos="fade-down">
+      <h1 class="fw-bold">اتصل بنا</h1>
+      <p class="mb-0">نحن هنا للإجابة على استفساراتكم وملاحظاتكم</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="card p-4 shadow-sm border-0 h-100">
+            <h3 class="fw-bold mb-4">أرسل رسالة</h3>
+            <div id="alertArea"></div>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">الاسم الكامل</label>
+                <input type="text" class="form-control" id="name" placeholder="أدخل اسمك">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" placeholder="example@domain.com">
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">الموضوع</label>
+                <input type="text" class="form-control" id="subject" placeholder="موضوع الرسالة">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">الرسالة</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary px-4 py-2">إرسال الرسالة</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="card p-4 shadow-sm border-0 h-100 bg-light-bg">
+            <h3 class="fw-bold mb-4">معلومات التواصل</h3>
+            
+            <div class="d-flex align-items-start mb-4">
+              <div class="bg-primary-custom text-white rounded-circle p-3 me-3 ms-3">
+                <i class="bi bi-geo-alt fs-4"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">العنوان</h5>
+                <p class="text-muted mb-0">الحرم الجامعي، المبنى الرئيسي، الطابق الأرضي</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-4">
+              <div class="bg-secondary-custom text-white rounded-circle p-3 me-3 ms-3">
+                <i class="bi bi-envelope fs-4"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">البريد الإلكتروني</h5>
+                <p class="text-muted mb-0">info@virtual-events.edu</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-4">
+              <div class="bg-accent-custom text-white rounded-circle p-3 me-3 ms-3">
+                <i class="bi bi-telephone fs-4"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold mb-1">رقم الهاتف</h5>
+                <p class="text-muted mb-0">+963 999 999 999</p>
+              </div>
+            </div>
+
+            <hr>
+            <h5 class="fw-bold mb-3">تابعنا على الشبكات الاجتماعية</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="btn btn-outline-primary rounded-circle"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-outline-info rounded-circle"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-outline-danger rounded-circle"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="layout-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
